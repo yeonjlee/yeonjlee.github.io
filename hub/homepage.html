@@ -123,16 +123,16 @@
         <img src="media/amore.jpg" alt="아모레" id="img02">
     </section>
     <section>
-        <img src="media/lapma.jpg" alt="라프마">
+        <img src="media/lapma.jpg" alt="라프마" id="img03">
     </section>
     <section>
-        <img src="media/king.jpg" alt="왕릉">
+        <img src="media/king.jpg" alt="왕릉" id="img04">
     </section>
     <section>
-    <img src="media/bonin.jpg" alt="보닌">
+    <img src="media/bonin.jpg" alt="보닌" id="img05">
     </section>
     <section>
-        <img src="media/lotte.jpg" alt="미술관">
+        <img src="media/lotte.jpg" alt="미술관" id="img06">
     </section>
     
 </div>
@@ -146,7 +146,12 @@
             <img src="media/aoodi2.jpg" alt="팝업이미지">
             <img src="media/close.png" alt="종료" id="close">
         </div>
-        <div id="modal2">
+        <div id="modal">
+            <div id="pop">
+            <img src="media/aoodi2.jpg" alt="팝업이미지">
+            <img src="media/close.png" alt="종료" id="close">
+        </div>
+        <div id="modal">
             <div id="pop">
             <img src="media/aoodi2.jpg" alt="팝업이미지">
             <img src="media/close.png" alt="종료" id="close">
@@ -164,6 +169,30 @@
             $('#modal').fadeOut();
             });
             $('#img02').click (function(){
+            $('#modal').fadeIn();
+            });
+            $('#modal #close').click (function(){
+            $('#modal').fadeOut();
+            });
+            $('#img03').click (function(){
+            $('#modal').fadeIn();
+            });
+            $('#modal #close').click (function(){
+            $('#modal').fadeOut();
+            });
+            $('#img04').click (function(){
+            $('#modal').fadeIn();
+            });
+            $('#modal #close').click (function(){
+            $('#modal').fadeOut();
+            });
+            $('#img05').click (function(){
+            $('#modal').fadeIn();
+            });
+            $('#modal #close').click (function(){
+            $('#modal').fadeOut();
+            });
+            $('#img06').click (function(){
             $('#modal').fadeIn();
             });
             }
