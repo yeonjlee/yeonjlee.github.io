@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery.js"></script>
     <title>Document</title>
     <style>
         *{
@@ -52,6 +53,7 @@
        
         section{
             display: inline-block;
+            cursor: pointer;
         }
         #con{
              width: 59%;
@@ -70,6 +72,28 @@
             padding-top: 50px;
            
         }
+
+        #modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 100;
+        display: none;
+      }
+       
+      #pop{
+        width: 60%;
+        height: 700px;
+        margin: 100px auto;
+        overflow: scroll;
+        overflow-x: hidden;
+        border: 1px solid black;
+        background-color: white;
+        z-index: 100;
+      }
     </style>
 </head>
 <body>
@@ -92,26 +116,58 @@
                 <li><a href="#">Editorial Design</a></li>
             </ul>
    
-    <section>
-        <a href="modal.html" target="_blank"><img src="media/aoodi.jpg" alt="아우디"></a>
+    <section >
+        <img src="media/aoodi.jpg" alt="아우디" id="img01">
     </section>
     <section>
-        <a href="modal1.html" target="_blank"><img src="media/amore.jpg" alt="아모레"></a>
+        <img src="media/amore.jpg" alt="아모레" id="img02">
     </section>
     <section>
-        <a href="modal2.html" target="_blank"><img src="media/lapma.jpg" alt="라프마"></a>
+        <img src="media/lapma.jpg" alt="라프마">
     </section>
     <section>
-        <a href="modal3.html" target="_blank"><img src="media/king.jpg" alt="왕릉"></a>
+        <img src="media/king.jpg" alt="왕릉">
     </section>
     <section>
-        <a href="modal4.html" target="_blank"><img src="media/bonin.jpg" alt="보닌"></a>
+    <img src="media/bonin.jpg" alt="보닌">
     </section>
     <section>
-        <a href="modal5.html" target="_blank" ><img src="media/lotte.jpg" alt="미술관"></a>
+        <img src="media/lotte.jpg" alt="미술관">
     </section>
+    
 </div>
 <footer><p>E-mail. babi770@naver.com<br>
-        Copyright ⓒ 2019 by lee yeonju. All Rights Reserved</p></footer>
+        Copyright ⓒ 2019 by lee yeonju. All Rights Reserved</p>
+</footer>
+
+
+        <div id="modal">
+            <div id="pop">
+            <img src="media/aoodi2.jpg" alt="팝업이미지">
+            <img src="media/close.png" alt="종료" id="close">
+        </div>
+        <div id="modal2">
+            <div id="pop">
+            <img src="media/aoodi2.jpg" alt="팝업이미지">
+            <img src="media/close.png" alt="종료" id="close">
+        </div>
+     
+        <script>
+            $(function(){
+            $('#modal #close').click (function(){
+            $('#modal').fadeOut();
+            });
+            $('#img01').click (function(){
+            $('#modal').fadeIn();
+            });
+            $('#modal #close').click (function(){
+            $('#modal').fadeOut();
+            });
+            $('#img02').click (function(){
+            $('#modal').fadeIn();
+            });
+            }
+            );
+            </script>
 </body>
 </html>
