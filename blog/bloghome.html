@@ -21,17 +21,25 @@
             display: block;
             clear: both;
         }
+        /* #logo{
+            position: relative;
+        } */
+        header nav{
+            position: relative;
+            top:-75px;
+            right:-240px;
+        }
         header nav>ul>li{
             list-style-type: none;
             /* display: inline-block; */
             /* padding-left: 20px; */
         }
         header nav li{
+            width:100px;
             background-color: #3f51b5;
             padding:20px;
             border: 1px solid #303f9f;
             
-           
         }
         header nav>ul>li>a{
             text-decoration: none;
@@ -58,20 +66,19 @@
         } */
         #banner{
             width: 100%;
+            /* z-index: -1; */
         }
+        
         #banner img{
             height: 50vh;
+           
         }
-        #banner{
-            z-index: -1;
-        }
+       
         div>img{
             width: 100%;
             
         }
-       #logo{
-        padding-top: 20px;
-       }
+      
        #por,#about,#contact{
            text-align: center;
        }
@@ -117,8 +124,8 @@
      
         #btn{
             position: absolute;
-            top:5px;
-            right: 5px;
+            top:0px;
+            right: 0px;
             width: 50px;
             height: 50px;
 
@@ -178,7 +185,8 @@
             }
             header nav{
                 float: right;
-                margin-top: 20px;
+                margin-top: 100px;
+                margin-right: 80px;
             }
             header nav li{
                 background-color: white;
@@ -198,13 +206,14 @@
             header nav>ul>li>a{
             color:#666666;      
         }
+        
     }
     @media screen and (min-width:320px){
         header>img{
             position: absolute;
             top:0px;
             left:0px;     
-    }
+        }
 }
     </style>
 </head>
