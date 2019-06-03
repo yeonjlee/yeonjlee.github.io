@@ -28,6 +28,7 @@
             position: relative;
             top:-75px;
             right:-240px;
+            display: none;
         }
         header nav>ul>li{
             list-style-type: none;
@@ -39,6 +40,7 @@
             background-color: #3f51b5;
             padding:20px;
             border: 1px solid #303f9f;
+
             
         }
         header nav>ul>li>a{
@@ -128,6 +130,7 @@
             right: 0px;
             width: 50px;
             height: 50px;
+           
 
         }
         footer{
@@ -187,6 +190,7 @@
                 float: right;
                 margin-top: 100px;
                 margin-right: 80px;
+              
             }
             header nav li{
                 background-color: white;
@@ -221,12 +225,12 @@
     <header>
         <img src="media/logoblog.png"  alt="로고">
         <div id="logo">            
-            <nav>            
+            <nav class="gnb">            
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#" style="color: #418acf;">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#por" style="color: #418acf;">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <button id="btn">_</button>
@@ -313,5 +317,8 @@
                    
                 </div>
             </footer>
+            <script>
+                    jQuery(function($){    $("#btn").click(function(){        $(".gnb").stop().slideToggle("fast");    });});
+                </script>
 </body>
 </html>
