@@ -22,6 +22,10 @@
         }
        header{
            background-color: black;
+            width: 100%;
+           height: 120px;
+           position: relative;
+           z-index: 1;
          
        }
         ul{
@@ -48,8 +52,8 @@
         .gnb>ul>li{
             float: right; 
             background-color:orangered;
-           width: 100px;
-           height: 50px;
+            width: 100px;
+            height: 50px;
         }
         
         .clear{
@@ -64,18 +68,14 @@
             position: absolute;
         }
         
-        #contents{
-            clear: both;
-            width: 100%;
-            height: 100%;
-            
-        }
+       
         #contents div{
-            display: inline-block;
+            /* display: inline-block; */
             text-align: center;
         }
         footer{
                 background-color: black;
+              
                
         }
         footer div{
@@ -96,14 +96,14 @@
        }
        #f2>p{
            margin: 0px;
-          padding: 0px;
+           padding: 0px;
        }
 
        #c1{
            background-color: aqua;
-           width: 30%;
-           /* height: 400px;
-           */
+           width: 320px;
+           height: 320px;
+           float: left;
        }
        #c1 div>h3{
            display: inline-block;
@@ -111,9 +111,12 @@
        }
        #c2{
         background-color:blue;
-           width: 33%;
-           /* height: 400px;
-          */
+        width: 320px;
+        height: 320px;
+        float: left;
+       }
+       #c2>img{
+        padding-top: 60px;
        }
        #c2 div>p{
         display: inline-block;
@@ -124,9 +127,9 @@
        }
        #c3{
         background-color:purple;
-           width: 30%;
-           /* height: 400px;
-            */
+        width: 320px;
+        height: 320px;
+        float: right;
        }
        #fix{
            background-color: rgba(251, 249, 249, 0.5);
@@ -206,9 +209,9 @@
                <p>공지사항 내용입니다.-5    2019-08-01</p>
             </div>
             <div id="c2">
-                <img src="image/0826_images/icon(1).png" alt="아이콘1">
-                <img src="image/0826_images/icon(2).png" alt="아이콘2">
-                <img src="image/0826_images/icon(3).png" alt="아이콘3">
+                <img src="image/0826_images/icon(1).png" alt="아이콘1" style="width:80px">
+                <img src="image/0826_images/icon(2).png" alt="아이콘2" style="width:80px">
+                <img src="image/0826_images/icon(3).png" alt="아이콘3" style="width:80px">
                 <div>
                     <p>이미지1 </p>
                     <p>이미지2 </p>
@@ -217,7 +220,7 @@
             </div>
             <div id="c3">
                 <h2>배너</h2>
-                <img src="image/0826_images/info.png" alt="info" style="width: 288px;">
+                <img src="image/0826_images/info.png" alt="info" style="width: 320px;">
                 <p>배너에 대한 설명을 기재한다.</p>
             </div>
         </article>

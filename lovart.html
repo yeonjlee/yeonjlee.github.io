@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+       
+        #wrapper{
+            width: 360px;
+            height: 670px;
+            background-image: url(images/and/배경20_02.png);
+            /* background-image: url(images/and/창작메인13_02.png); */
+            position: relative;
+           
+        }
+        #bar{
+            position: absolute;
+            left: 20px;
+            top: 30px;
+        }
+        #logo{
+            position: absolute;
+            left: 85px;
+            top: 10px;
+        }
+   #gang{
+            position: absolute;
+            left: 283px;
+            top: 25px;
+   }
+   #my{
+             position: absolute;
+            left: 315px;
+            top: 25px;
+   }
+   h1{
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       text-align: center;
+       font-size: 30px;
+       position: absolute;
+       left: 140px;
+       top: 15px;
+   }
+   h1>a{
+       text-decoration: none;
+       color: #455a64;
+   }
+ #longbar{
+     border: 1px solid #37474f;
+     border-radius: 50px;
+     width: 300px;
+     height: 24px;
+     position: absolute;
+    left: 25px;
+    top: 83px;
+ }
+ #dot{
+    position: absolute;
+    left: 330px;
+    top: 78px;
+ }
+ #longbar>p{
+     font-family: Adobe Gothic Std;
+     font-size: 12px;
+     color: #455a64;
+     position: absolute;
+     left: 23px;
+ }
+ #semo{
+    position: absolute;
+     left: 78px;
+     top: 7px;
+ }
+ hr{
+     position: absolute;
+     top: 120px;
+     width: 355px;
+     /* border: 0.5px solid #37474f; */
+ }
+
+ nav{
+    position: absolute;
+     top:130px; 
+    
+ }
+ nav>ul{
+     padding-left: 18px;
+ }
+ nav>ul>li{
+     display: inline-block;
+     list-style-type: none;
+     padding-left: 13px;
+     
+ }
+ ul>li>a{
+     text-decoration: none;
+     color: #455a64;
+     font-size: 14px;
+     font-family: Noto Sans KR Regular;
+    
+ }
+ #baner{
+    position: absolute;
+     left: 25px;
+     top: 155px;
+ }
+ #num{
+    position: absolute;
+     left: 160px;
+     top: 370px;
+     font-size: 11px;
+     color: #455a64;
+     font-family: Noto Sans KR Regular;
+ }
+ #new{
+    position: absolute;
+     left: 120px;
+     top: 390px;
+     font-size: 18px;
+     color: #455a64;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ article{
+     display: inline-block;
+     position: absolute;
+     left: 65px;
+     top: 420px;
+     /* width: 1000px; */
+     height: 200px;
+     overflow: hidden;
+ }
+
+ 
+ #circle1{
+     width: 20px;
+     height: 20px;
+    border-radius: 100px;
+    background-color:  #455a64; 
+    position: absolute;
+    left: 120px;
+    top: 630px;
+ }
+ #circle2{
+     width: 20px;
+     height: 20px;
+    border-radius: 100px;
+    background-color: #999999;
+    position: absolute;
+    left: 145px;
+    top: 630px;
+ }
+ #circle3{
+     width: 20px;
+     height: 20px;
+    border-radius: 100px;
+    background-color: #999999;
+    position: absolute;
+    left: 170px;
+    top: 630px;
+    
+ }
+ #circle4{
+     width: 20px;
+     height: 20px;
+    border-radius: 100px;
+    background-color: #999999;
+    position: absolute;
+    left: 195px;
+    top: 630px;
+  
+ }
+ #circle5{
+     width: 20px;
+     height: 20px;
+    border-radius: 100px;
+    background-color: #999999;
+    position: absolute;
+    left: 220px;
+    top: 630px;
+   
+ }
+ #menu{
+        width: 190px;
+        height: 670px;
+        background-color: white;
+        position: absolute;
+        opacity: 0.95;
+        display:none;
+ }
+ #menu ul{
+     padding: 0px;
+ }
+ #menu ul>li{
+     list-style-type: none;
+     border-bottom: 1px solid #999999;
+     height: 29px;
+ }
+ #menu>ul>p{
+     background-color: #acacac;
+    font-size: 14px;
+     font-family: Noto Sans KR Regular;
+     color: #455a64;
+     height: 29px;
+ }
+#dotgi{
+        width: 190px;
+        height: 29px;
+        background-color: #999999;
+        position: absolute;
+        top:640px;
+}
+#dotgi>p{
+    text-align: center;
+    color: white;
+    font-family: Noto Sans KR Regular;
+   }
+  
+   #btn>a>#left{
+    position: absolute;
+    left: 20px;
+    top: 500px;
+   }
+   #btn>a>#right{
+    position: absolute;
+    left: 300px;
+    top: 500px;
+    z-index: 10;
+   }
+   #phoneback{
+       background-color: chocolate;
+       height: 50vh;
+   }
+
+   #phoneback{
+       display: none;
+   }
+   @media only screen and (min-width:700px){
+       #wrapper{
+           display: none;
+   }
+   #phoneback{
+       display: block;
+   }
+   }
+    </style>
+</head>
+<body>
+    
+           <div id=phoneback> 
+               <img id="phone" src="images/and/new핸드폰 목업.png" alt="">
+            </div>
+        <div id="wrapper">
+            
+            <a href="#">
+                <img id="bar" src="images/and/창작메인_06.png" alt="메뉴바" style ="width:30px">
+            </a>
+            <a href="#"><img id="logo" src="images/and/logo.png" alt="로고" style ="width:50px"></a>
+            <p><h1><a href="#">LOVART</a></h1></p>
+           <a href="#"> <img id="gang" src="images/and/장바구니_03.png" alt="장바구니" style ="width:27px"></a>
+            <a href="#"><img id= "my" src="images/and/창작메인_10.png" alt="사람"   style ="width:32px"></a>
+          
+        <div id="longbar">
+            <p>통합검색</p>
+           <a href="#"> <img id="semo" src="images/and/창작메인9_16.png" alt="세모" style ="width:12px"></a>
+        </div>
+        <a href="#"><img id="dot" src="images/and/창작메인_17.png" alt="돋보기" style ="width:28px"></a>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#">기획전</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">반짝딜</a></li>
+                <li><a href="#">최저가</a></li>
+                <li><a href="#">모바일쿠폰</a></li>
+            </ul>
+        </nav>
+        <section>
+           <a href="#"> <img id="baner"src="images/and/창작메인_07.png" alt="추석맞이배너" style ="width:303px"></a>
+        </section>
+        <p id="num">&lt; 1/5 &gt;</p>
+        <h2 id="new">New Arrival</h2>
+        <div id="btn">
+           <a href="#"><img id="left" src="images/and/btnleft.png" alt="꺽새"></a>
+           <a href="#"><img id="right" src="images/and/btnright.png" alt="오른쪽 꺽새"></a>  
+        </div>
+        <article>
+            <a href="#">
+                <img id="img1" src="images/and/img1.png" alt="" style ="width:200px">
+            </a>
+            <a href="#">
+                <img id="img2" src="images/and/img2.png" alt=""  style ="width:200px">
+            </a>
+            <a href="#">
+                <img id="img3" src="images/and/img3.png" alt=""  style ="width:200px">
+            </a>
+            <a href="#">
+                <img id="img4" src="images/and/img4.png" alt=""  style ="width:200px">
+            </a>
+            <a href="#">
+                <img id="img5" src="images/and/img5.png" alt=""  style ="width:200px"></a>
+        </article>
+        <div id="circleBtn">
+        <a href="#"><div id="circle1" ></div></a>
+        <a href="#"><div id="circle2"></div></a>
+        <a href="#"><div id="circle3"></div></a>
+        <a href="#"><div id="circle4"></div></a>
+        <a href="#"><div id="circle5"></div></a>
+        </div>
+        <div id="menu">
+            <ul>
+                <p>전체카테고리</p>
+                <li><a href="#">침식/옷장/붙박이장</a></li>
+                <li><a href="#">거실/소파</a></li>
+                <li><a href="#">식탁/식탁의자</a></li>
+                <li><a href="#">서재/의자</a></li>
+                <li><a href="#">자녀방/키즈</a></li>
+                <li><a href="#">주방가구</a></li>
+                <li><a href="#">수납/생활</a></li>
+                <li><a href="#">홈테코</a></li>
+                <li><a href="#">Best review</a></li>
+            </ul>
+            <ul>
+                <p>나의 주문확인</p>
+                <li><a href="#"><img  src="images/and/주문확인_03.png" alt="주문확인" style ="width:25px">주문확인</a></li>   
+            </ul>
+            <a href="#"><div id="dotgi"><p>닫기</p></div></a>
+        </div>
+        </div>
+     
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            var currentIdx=0;
+            $('#bar').on('click',function(){
+                console.log ('click');
+             $('#menu').css('display','block');
+            });
+            $('#dotgi').on('click',function(){
+            $('#menu').css('display','none');
+            });
+            
+            $('#circleBtn>a').on('click', function(){                
+                var idx=$(this).index();    
+                currentIdx=idx;
+                $('article>a>img').attr('src','images/and/img'+(idx+1)+'.png');    
+                $('#circleBtn>a>div').css('background-color','#999999');
+                $('#circleBtn>a>div').eq(idx).css('background-color','#455a64');
+            }); 
+
+            
+            //이전버튼을 클릭
+            $('#left').on('click',function(){
+                console.log('leftclick')
+                currentIdx--;
+                if( currentIdx >= 0 ) {                    
+                    ImgMove();                    
+                }
+                
+            });
+            //다음버튼을 클릭
+            $('#right').on('click',function(){
+                console.log('rightclick')
+                if( currentIdx < 4 ){
+                    currentIdx++;
+                    ImgMove();
+                }   
+            });     
+
+            function ImgMove()
+            {
+                $('article>a>img').attr('src','images/and/img'+(currentIdx+1)+'.png');
+                $('#circleBtn>a>div').css('background-color','#999999');
+                $('#circleBtn>a>div').eq(currentIdx).css('background-color','#455a64');
+            }    
+        });
+
+    </script>
+</body>
+</html>
