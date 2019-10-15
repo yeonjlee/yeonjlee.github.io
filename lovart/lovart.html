@@ -230,7 +230,29 @@
     top: 500px;
     z-index: 10;
    }
+   
    #phoneback{
+       position: absolute;
+       background-color: chocolate;
+       height: 50vh;
+       width: 100%;
+       display: none;
+
+   }
+   #wrapper{
+       display: block;
+      
+   }
+   
+   #qr{
+      position: fixed;
+      left: 500px;
+      top:250px;
+      
+   }
+
+  
+   /* #phoneback{
        background-color: chocolate;
        height: 50vh;
        display: none;
@@ -243,17 +265,18 @@
       left: 500px;
       top:250px;
       
-   }
+   }*/
 
    @media all and (min-width:700px){
-       #wrapper{
-           display: none;
-        }
         #phoneback{
-            display: block;
+            display:block;
         }
-   }
-
+        #wrapper{
+            position: absolute;
+            left: 64px;
+            top:176px;
+        }
+   } 
     </style>
 </head>
 <body>
