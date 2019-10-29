@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="samwoo_02.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="topbar">
+            <div id="topwrap">
+                    <div id="topmenu">
+                        <a href="samwoo.html">HOME</a>
+                        <a href="#">SITEMAP</a>
+                        <a href="#">CONTACT US</a>
+                    </div>
+             </div>
+        </div>
+        <div id="menu">
+                <a href="samwoo.html"><img id="logo" src="images/logo.png" alt="로고"></a>
+            <nav>
+                    <ul>
+                        <li>
+                            <a href="samwoo_sub1.html">회사소개</a>
+                                <ul class="gnb_sub">
+                                        <li><a href="samwoo_sub1.html">인사말</a></li>
+                                        <li><a href="samwoo_sub2.html">조직도</a></li>
+                                        <li><a href="samwoo_sub3.html">오시는 길</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">분체설비 산업</a>
+                                <ul class="gnb_sub">
+                                        <li><a href="#">분쇄기</a></li>
+                                        <li><a href="#">분산기</a></li>
+                                        <li><a href="#">혼합기</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">신소재 산업</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">Alumina Fiber</a></li>
+                                    <li><a href="#">활성탄</a></li>
+                                    <li><a href="#">혼합기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">수탁가공 산업</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">분쇄기</a></li>
+                                    <li><a href="#">분산기</a></li>
+                                    <li><a href="#">혼합기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">자료 및 테스트</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>    
+        </div>
+    </header>
+            <article id="topimg">
+                <!-- <img src="images/sub1.jpg" alt="상단이미지"> -->
+            </article>
+           <div id="sub_wrap">
+                    <div id="sub_menu">
+                        <h3>회/사/소/개</h3> 
+                        <div class="sub-title">
+                            <a href="samwoo_sub1.html">인사말</a>
+                        </div>
+                        <div class="sub-title">
+                            <a href="#">조직도</a>
+                        </div>
+                        <div class="sub-title">
+                            <a href="samwoo_sub3.html">오시는 길</a>
+                        </div>
+                    </div>   
+           
+                <div class="sub">
+                        
+                        <div class="ss_title">조직도</div>
+                        <div class="ss_title_list"><img src="images/home.jpg" alt="home">&nbsp; > &nbsp; 회사소개 &nbsp; > &nbsp; 인사말
+                        </div>
+                </div>
+                <div id="hr"></div>
+                <div id="cell">
+                    <img src="images/cellimg.jpg" alt="조직도">
+                </div>
+                
+            </div>
+            <footer>
+                <p>
+                    서울특별시 송파구 오금로 332  다윤빌딩 B동 6층<br>
+                    Tel : 02-408-0777  E-mail : samwoo@samwoomt.combr<br>
+                    copyright ⓒ 2006 SAMWOO MATECH Co All rights reserved<br>  
+                    Designed by webbridge 
+                </p>
+            </footer>    
+            <script src="js/jquery-3.4.1.js"></script>
+            <script>
+                   
+            $(document).ready(function (){
+                    $('nav>ul>li').on({
+                        'mouseover':function(){
+                            $('.gnb_sub').stop().fadeIn();                       
+                        },
+                        'mouseleave':function(){
+                            $('.gnb_sub').stop().fadeOut();                      
+                        }  
+                });              
+               
+                $('#sub_menu>.sub-title').on('click', function(){    
+                    // e.preventDefault();
+                    var idx=$(this).index();
+                    console.log("click=>"+idx );  
+                   
+                    $('#sub_menu>.sub-title>a').css('color','#777777');
+                    var divTag = $('#sub_menu>.sub-title').eq(idx-1);
+                    var aTag = divTag.children('a');
+                    //console.log( "aTag=>"+aTag.text() );
+                    aTag.css('color','#005b7f');
+                    aTag.css('font-weight','bold');
+                   
+                    
+            }); 
+        });
+
+                   
+            </script>
+        </body>
+        </html>

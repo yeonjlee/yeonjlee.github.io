@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="samwoo.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="topbar">
+           <div id="topwrap">
+                <div id="topmenu">
+                    <a href="samwoo.html">HOME</a>
+                    <a href="#">SITEMAP</a>
+                    <a href="#">CONTACT US</a>
+                </div>
+           </div>
+        </div>
+        <div id="menu">
+                <a href="samwoo.html"><img id="logo" src="images/logo.png" alt="로고"></a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="samwoo_sub1.html">회사소개</a>
+                                <ul class="gnb_sub">
+                                        <li><a href="samwoo_sub1.html">인사말</a></li>
+                                        <li><a href="samwoo_sub2.html">조직도</a></li>
+                                        <li><a href="samwoo_sub3.html">오시는 길</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">분체설비 산업</a>
+                                <ul class="gnb_sub">
+                                        <li><a href="#">분쇄기</a></li>
+                                        <li><a href="#">분산기</a></li>
+                                        <li><a href="#">혼합기</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">신소재 산업</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">Alumina Fiber</a></li>
+                                    <li><a href="#">활성탄</a></li>
+                                    <li><a href="#">혼합기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">수탁가공 산업</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">분쇄기</a></li>
+                                    <li><a href="#">분산기</a></li>
+                                    <li><a href="#">혼합기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">자료 및 테스트</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>    
+        </div>
+    </header>
+    <section id="container">
+        <article class="title">
+            <h2>SAMWOO MaTech</h2>
+            <h3>분체설비 전문</h3>
+            <h3>Cunsultant</h3>
+        </article>
+        <article class="circle">
+            <a href="samwoo_sub1.html">
+                <div>
+                    <img src="images/icon1.png" alt="사람아이콘">
+                    <p>인사말</p>
+                </div>
+            </a>
+        </article>
+        <article class="circle">
+            <a href="#">
+                <div>
+                    <img src="images/icon2.png" alt="톱니바퀴">
+                    <p>분체설비 산업</p>
+                </div>
+            </a>
+        </article>
+        <article class="circle">
+            <a href="#">
+                <div>
+                    <img src="images/icon3.png" alt="자연">
+                    <p>신소재 산업</p>
+                </div>
+            </a>
+        </article>
+        <article class="circle">
+            <a href="#">
+                <div>
+                    <img src="images/icon4.png" alt="수첩">
+                    <p>수탁가공 산업</p>
+                </div>
+            </a>
+        </article>
+        <article class="circle">
+            <a href="#">
+                <div>
+                    <img src="images/icon5.png" alt="말풍선">
+                    <p>고객지원</p>
+                </div>
+            </a>
+        </article>
+        <article class="circle">
+            <a href="samwoo_sub3.html">
+                <div>
+                    <img src="images/icon6.png" alt="표지판">
+                    <p>오시는 길</p>
+                </div>
+            </a>
+        </article>
+    </section>
+    <footer>
+        <p>
+            서울특별시 송파구 오금로 332  다윤빌딩 B동 6층<br>
+            Tel : 02-408-0777  E-mail : samwoo@samwoomt.combr<br>
+            copyright ⓒ 2006 SAMWOO MATECH Co All rights reserved<br>  
+            Designed by webbridge 
+        </p>
+    </footer>   
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        //  $(document).ready(function(){
+        //     var currentIdx=1;
+
+        //     setInterval(fnImagMove,3000);
+        //     function fnImagMove()
+        //     {
+        //     // $('#container').on('click',function(){
+        //     //     console.log ('click');
+        //         currentIdx++;
+        //         if( currentIdx>3 ) {
+        //             currentIdx=1;
+        //         }
+        //         $('#container').css('background-image','url(images/img'+currentIdx+'.jpg)');    
+        //     }
+        // }); 
+
+        $(document).ready(function(){
+            var currentIdx=1;
+        
+            setInterval(fnImagMove,5000);
+
+            // $('#container').on('click',fnImagMove);
+            function fnImagMove()
+            {   
+                console.log( "background-image move");            
+                //$('#container').eq(currentIdx).animate({'background-position':'-1000px 0px'}, 2000);
+                // $('#container').eq(currentIdx).animate({marginLeft:'0px'}, 2000);
+                // $('#container').eq(currentIdx).css('background-image','url(images/img'+currentIdx+'.jpg)');                
+                $('#container').css({'background-position':'-2000px 0px'});                
+                currentIdx++;
+                if(currentIdx>3){
+                    currentIdx=1;
+                 }
+                $('#container').css('background-image','url(images/img'+currentIdx+'.jpg)'); 
+                $('#container').css({'background-position':'0px 0px'});
+                // $('#container').delay(3000).css({'background-position':'0px 0px'});
+                // $('#container').delay(3000).css({'background-position':'-2000px 0px'});
+            }
+        });
+
+               $(document).ready(function (){
+                $('nav>ul>li').on({
+                    'mouseover':function(){
+                        $('.gnb_sub').stop().fadeIn();                       
+                    },
+                    'mouseleave':function(){
+                        $('.gnb_sub').stop().fadeOut();                      
+                    }  
+            });
+        });
+
+   
+    </script>
+</body>
+</html>

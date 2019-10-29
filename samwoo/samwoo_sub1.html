@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="samwoo.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="topbar">
+            <div id="topwrap">
+                    <div id="topmenu">
+                        <a href="samwoo.html">HOME</a>
+                        <a href="#">SITEMAP</a>
+                        <a href="#">CONTACT US</a>
+                    </div>
+             </div>
+        </div>
+        <div id="menu">
+                <a href="samwoo.html"><img id="logo" src="images/logo.png" alt="로고"></a>
+            <nav>
+                    <ul>
+                        <li>
+                            <a href="samwoo_sub1.html">회사소개</a>
+                                <ul class="gnb_sub">
+                                        <li><a href="samwoo_sub1.html">인사말</a></li>
+                                        <li><a href="samwoo_sub2.html">조직도</a></li>
+                                        <li><a href="samwoo_sub3.html">오시는 길</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">분체설비 산업</a>
+                                <ul class="gnb_sub">
+                                        <li><a href="#">분쇄기</a></li>
+                                        <li><a href="#">분산기</a></li>
+                                        <li><a href="#">혼합기</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">신소재 산업</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">Alumina Fiber</a></li>
+                                    <li><a href="#">활성탄</a></li>
+                                    <li><a href="#">혼합기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">수탁가공 산업</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">분쇄기</a></li>
+                                    <li><a href="#">분산기</a></li>
+                                    <li><a href="#">혼합기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="gnb_sub">
+                                    <li><a href="#">자료 및 테스트</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>    
+        </div>
+    </header>
+            <article id="topimg">
+                <!-- <img src="images/sub1.jpg" alt="상단이미지"> -->
+            </article>
+           <div id="sub_wrap">
+                    <div id="sub_menu">
+                        <h3>회/사/소/개</h3> 
+                        <div class="sub-title">
+                            <a href="#">인사말</a>
+                        </div>
+                        <div class="sub-title">
+                            <a href="samwoo_sub2.html">조직도</a>
+                        </div>
+                        <div class="sub-title">
+                            <a href="samwoo_sub3.html">오시는 길</a>
+                        </div>
+                    </div>   
+           
+                <div class="sub">
+                        
+                        <div class="ss_title">인사말</div>
+                        <div class="ss_title_list"><img src="images/home.jpg" alt="home">&nbsp; > &nbsp; 회사소개 &nbsp; > &nbsp; 인사말
+                        </div>
+                </div>/  
+                <div id="hr"></div>
+                <div id="text">
+                저희 삼우마테크의 홈페이지를 방문해 주셔서감사합니다.
+                 <br>
+                저희 三友 Ma·Tech는, 1990년 분체설비 전문 Consultant 업체인 “淸新企業”이라는 회<br>
+                사로 설립한 이래로, 분체 소재의 개발 및 생산을 위한, 각종설비를 취급해 왔습니다.
+                 <br><br>
+                다년간의 풍부한 실적과 경험으로 신소재 개발 및 양산에 기여해 왔으며, 점점 다양화·첨<br>
+                단화되는 소재 산업의 요구에 맞춘 설비 Network 구성과 제2의 도약을 위해 2003년<br>
+                7월 三友Ma·Tech Co.로 새롭게 출발하게 되었습니다.
+                <br><br>
+                소재산업은 장치산업이라고 합니다.<br>
+                또한 소재산업에서 장치는 그 자체가 Know How라고도 합니다.
+                <br><br>
+                귀사의 소중한 소재 생산을 위한 Process 개발에 「최적·최상의 설비」를 제공하여, 효율적<br>
+                인첨단의 고부가가치 소재를 생산하는데 참여하고자 합니다.
+                <br><br>
+                대표이사 유태열
+                </div>
+                <img id="textimage" src="images/textimg.jpg" alt="">
+            </div>
+            <footer class="footer01">
+                <p>
+                    서울특별시 송파구 오금로 332  다윤빌딩 B동 6층<br>
+                    Tel : 02-408-0777  E-mail : samwoo@samwoomt.combr<br>
+                    copyright ⓒ 2006 SAMWOO MATECH Co All rights reserved<br>  
+                    Designed by webbridge 
+                </p>
+            </footer>    
+            <script src="js/jquery-3.4.1.js"></script>
+            <script>
+                       $(document).ready(function (){
+                        $('nav>ul>li').on({
+                            'mouseover':function(){
+                                $('.gnb_sub').stop().fadeIn();                       
+                            },
+                            'mouseleave':function(){
+                                $('.gnb_sub').stop().fadeOut();                      
+                            }  
+                    });
+
+                    $('#sub_menu>.sub-title').on('click', function(){    
+                    // e.preventDefault();
+                    var idx=$(this).index();
+                    console.log("click=>"+idx );  
+                    // currentIdx=idx;
+                    $('#sub_menu>.sub-title>a').css('color','#777777');
+                    var divTag = $('#sub_menu>.sub-title').eq(idx-1);
+                    var aTag = divTag.children('a');
+                    //console.log( "aTag=>"+aTag.text() );
+                    aTag.css('color','#005b7f');
+                    aTag.css('font-weight','bold');
+                    
+            }); 
+                });
+                   
+            </script>
+        </body>
+        </html>
