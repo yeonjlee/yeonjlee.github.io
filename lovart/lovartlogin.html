@@ -10,7 +10,7 @@
         }
         #wrapper{
             width: 360px;
-            height: 640px;
+            height: 670px;
             background-image: url(images/and/배경20_02.png);
             /* background-image: url(images/and/창작메인13_02.png); */
             position: relative;
@@ -74,9 +74,47 @@
            
         }
 
+        #phoneback{
+       position: absolute;
+       background-color: #97735e;
+       height: 50vh;
+       width: 100%;
+       display: none;
+   }
+   #wrapper{
+       display: block;
+      
+   }
+   #phone{
+       margin-top: 10px;
+   }
+   #qr{
+      position: fixed;
+      left: 500px;
+      top:250px;
+      
+   }
+   
+        @media all and (min-width:700px){
+        #phoneback{
+            display:block;
+        }
+        #wrapper{
+            position: absolute;
+            left: 62px;
+            top:106px;
+        }
+   } 
+
     </style>
 </head>
 <body>
+
+    <div id=phoneback> 
+            <img id="phone" src="images/and/펀텔레콤_02.png" alt="" style="width: 477px; height: 900px;">
+            <img id="qr" src="images/and/QRCodeImg.png" alt="" style="width: 150px; height: 150px;">
+    </div>
+
     <div id="wrapper">
        <header>
             <h1><a href="lovart.html">LOVART</a></h1>
