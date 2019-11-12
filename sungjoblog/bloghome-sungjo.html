@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        
+        *{
+            font-family:Nexa;
+            margin: 0 auto;
+        }
+        header{
+            width: 80%;
+            height: 80px;
+            margin: 0 auto;
+            position: relative;
+        }
+        header>img{
+            margin-top: 15px;
+        }
+
+        #heo{
+            position: absolute;
+            top:50px;
+            left: 150px;
+            color: #80ffd2;
+            font-size: 45px;
+        }
+        
+        #logo:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* #logo{
+            position: relative;
+        } */
+        header nav{
+            position: relative;
+            top:-75px;
+            right:-240px;
+            display: none;
+        }
+        header nav>ul>li{
+            list-style-type: none;
+            /* display: inline-block; */
+            /* padding-left: 20px; */
+        }
+        header nav li{
+            width:100px;
+            background-color: #3f51b5;
+            padding:20px;
+            border: 1px solid #303f9f;
+
+            
+        }
+        header nav>ul>li>a{
+            text-decoration: none;
+            color:white;
+            font-size: 25px;
+        }
+        /* header h1{
+            float: left;
+            color: #666666;
+            font-size: 60px;
+            margin-top: 12px;
+            padding-left: 180px;
+        } */
+        /* header nav{
+           float:right;
+           margin-top: 20px;
+             
+        } */
+        /* header>img{
+            position: absolute;
+            top:50px;
+            left: 40px;
+            z-index:100;
+        } */
+        #banner{
+            width: 100%;
+            height: 70vh;
+            background-image: url('media/image/main_07.jpg');
+            background-repeat: no-repeat; 
+            background-size: cover;
+            z-index: -1;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+       #banner h1{
+           position: absolute;
+           left:20%;
+           top:35%;
+           font-size: 70px;
+           color: #fff;
+       }
+       #banner h3{
+           position: absolute;
+           font-size: 30px;
+           font-family: roboto;
+           color: #fff;
+           left: 25%;
+           top:48%;
+       }
+       
+       #about,#por,#contact{
+           text-align: center;
+           margin-top: 50px;
+       }
+       #por>h2,#about>h2,#contact>h2{
+         font-size: 50px;
+         color: #c490bf;
+         margin-bottom: 20px;
+       }
+       #about p,#contact p{
+           color: #666666;
+           font-size: 25px;
+           font-family: Roboto;
+       }
+       #text{
+           margin-top: 30px;
+           text-align: center;
+           color: #666666;
+           font-size: 15px;
+           line-height: 30px;
+       }
+       #tt>p{
+           font-family: roboto;
+           font-size: 20px;
+           line-height: 40px;
+       }
+       /* #tt>p:nth-of-type(2){
+           border-bottom: 1px solid;
+           margin:0px 800px 0px 800px;
+       } */
+      
+       #about p{
+         color: #666666;
+         font-size: 25px;
+       }
+       #circle{
+           padding-top: 25px;
+            width: 50%;
+            margin: 20px;
+           
+       }
+       
+       section{
+       display: inline-block;
+       }
+     
+        #btn{
+            position: absolute;
+            top:0px;
+            right: 0px;
+            width: 50px;
+            height: 50px;
+        }
+        #pp p{
+            font-size: 15px;
+        }
+        footer{
+            margin-top: 50px;
+            width: 100%;
+            background-color: #666666;
+            height: 100px;
+            
+        }
+        footer p{
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            font-family: roboto;
+            
+        }
+        /* #footer{
+            margin-top: 50px;
+        } */
+        #con{
+            width: 60%;
+            margin-top: 50px;
+            display: flex;
+            flex-flow:row wrap;
+        }
+        section{
+            cursor: pointer;
+            position: relative;
+            margin: 0px;
+            width: 330px;
+            height: 270px;
+
+        }
+        section img{
+            width: 330px;
+            height: 270px;
+            margin-left: 70px;
+        }
+        section p{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 40%;
+            color: white;
+           position: absolute;
+           top:0px;
+           left: 70px;
+           display: none;
+          
+        }
+        section:hover p{
+            display: block;
+        }
+        @media screen and (min-width:768px){
+            #banner {
+              height: 70vh;
+            } 
+            header nav{
+                float: right;
+                margin-top: 100px;
+                margin-right: 80px;
+                display: block;
+              
+            }
+            header nav li{
+                background-color: white;
+                border: none;
+                display:inline-block;
+            }
+            #btn{
+                display: none;
+            }
+            header nav>ul>li>a{
+            color:#666666;
+            }
+            #banner h1{
+                left: 30%;
+               
+            }
+            #banner h3{
+                left: 34%;
+               
+            }
+        }
+
+        @media screen and (min-width:1024px){
+            
+        #banner{
+            height: 90vh;
+        }
+            header nav>ul>li>a{
+            color:#666666;      
+        }
+        header nav{
+                display: block;      
+            }
+            #banner h1{
+                left: 32%;
+                font-size: 120px;
+               
+            }
+            #banner h3{
+                left: 40%;
+                font-size: 40px;
+                top:52%;
+               
+            }
+        
+    }
+    @media screen and (min-width:320px){
+        header>img{
+            position: absolute;
+            top:0px;
+            left:0px;     
+        }
+         
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="media/image/redlogo.png"  alt="레드로고">
+        <h1 id="heo"> SUNGJO HEO</h1>
+        <div id="logo">            
+            <nav class="gnb">            
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#por" style="color: #418acf;">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="btn">_</button>
+        </div>
+    </header>
+    <div id="banner">
+    <h1>PORTFOLIO</h1>
+    <h3>WebDesigner sungjo heo</h3>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <P>WELCOME TO MY WEBSITE</P>
+        <P>WebDesigner sungjo heo</P>
+    </div>
+       <div id="text">
+           <p>안녕하세요. 웹디자이너 허성조입니다.</p>
+            <p>저의 포트폴리오 사이트를 방문해 주셔서 감사드립니다.</p>
+            <br>
+            <p>저는 웹디자이너로써 단순히 홈페이지를 디자인하고 구축하는 디자이너이기보다는</p> 
+            <p>시대의 흐름과 IT분야의 동향에 따라 빠르게 접근하고 변화하는 크리에이티브한 웹디자이너가 되기 위해 항상 노력하고 있으며,</p> 
+            <p>다양한 웹 브라우저가 해석할수 있는 그래픽과 사용자 인터페이스를 보여주기에 알맞은 마크업 언어 형식에 대한 지식을 갖추고 </p>
+            <p>컨텐츠 전달의 개념을 정확하고 계획적으로 기획하여, </p>
+           <p> 최적화된 인터페이스를 만들어 나아가기 위해 언제나 노력하고 있습니다.</p>
+           <img id="circle" src="media/circle.png" alt="써클" >
+        </div>
+        
+    <div id="por">
+        <h2>PORTFOLIO</h2>
+    </div>
+    
+        <div id="con">
+            <section>
+                <img src="media/baner1.jpg" alt="">
+                <p>서울관광재단 자세히 보기</p>
+            </section>
+            <section>
+                <img src="media/baner2.jpg" alt="">
+                <p>조선왕릉 자세히 보기</p>
+            </section>
+            <section>
+                <img src="media/baner3.jpg" alt="">
+                <p>종묘 자세히 보기</p>
+            </section>
+            
+            <section>
+                <img src="media/baner7.jpg" alt="">
+                <p>레몬트리 자세히 보기</p>
+            </section>
+            <section>
+                <img src="media/baner8_10.jpg" alt="">
+                <p>SJ디자인 자세히 보기</p>
+            </section>
+            <section>
+                <img src="media/cat.jpg" alt="">
+                <p>캣타워 자세히 보기</p>
+            </section>
+        </div>
+        <div id="contact">
+            <h2>CONTACT</h2>
+            <P>WebDesigner sungjo heo</P>
+        </div>
+           <div id="text">
+            <div id="tt">
+                <p> Gonjiam-eup pyengchon17-gil Gwangju-si, Gyeonggi-do, Republic of Korea</p>
+                <p>threejojo7.naver.com</p>
+            </div>
+            <br><br>
+            <hr style="width: 300px;">
+            <br><br>
+           <div id="pp">
+                <p> 안녕하세요. 허성조입니다.</p>
+                <p>궁금한 사항을 메일로 문의해 주시면 빠른 시일내에 답변드리도록 하겠습니다.</p>
+                <p>감사합니다.</p>
+           </div>
+            </div>
+        <footer>
+                <div id="footer">
+                        <p style="padding-top: 30px">e-mail: threejojo7@naver.com</p>
+                        <p>copyright&copy 2019 by sungjo heo  all rights reserved</p>
+                   
+                </div>
+            </footer>
+            <script>
+                    jQuery(function($){    $("#btn").click(function(){        $(".gnb").stop().slideToggle("fast");    });});
+                </script>
+</body>
+</html>
