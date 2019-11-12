@@ -1,0 +1,273 @@
+  
+        *{
+            font-family:Nexa;
+            margin: 0 auto;
+        }
+        header{
+            width: 80%;
+            height: 80px;
+            margin: 0 auto;
+            position: relative;
+        }
+        header>img{
+            margin-top: 15px;
+        }
+
+        #heo{
+            position: absolute;
+            top:50px;
+            left: 150px;
+            color: #80ffd2;
+            font-size: 45px;
+        }
+        
+        #logo:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* #logo{
+            position: relative;
+        } */
+        header nav{
+            position: relative;
+            top:-75px;
+            right:-240px;
+            display: none;
+        }
+        header nav>ul>li{
+            list-style-type: none;
+            /* display: inline-block; */
+            /* padding-left: 20px; */
+        }
+        header nav li{
+            width:100px;
+            background-color: #3f51b5;
+            padding:20px;
+            border: 1px solid #303f9f;
+
+            
+        }
+        header nav>ul>li>a{
+            text-decoration: none;
+            color:white;
+            font-size: 25px;
+        }
+        /* header h1{
+            float: left;
+            color: #666666;
+            font-size: 60px;
+            margin-top: 12px;
+            padding-left: 180px;
+        } */
+        /* header nav{
+           float:right;
+           margin-top: 20px;
+             
+        } */
+        /* header>img{
+            position: absolute;
+            top:50px;
+            left: 40px;
+            z-index:100;
+        } */
+        #banner{
+            width: 100%;
+            height: 70vh;
+            background-image: url('media/image/main_07.jpg');
+            background-repeat: no-repeat; 
+            background-size: cover;
+            z-index: -1;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+       #banner h1{
+           position: absolute;
+           left:20%;
+           top:35%;
+           font-size: 70px;
+           color: #fff;
+       }
+       #banner h3{
+           position: absolute;
+           font-size: 30px;
+           font-family: roboto;
+           color: #fff;
+           left: 25%;
+           top:48%;
+       }
+       
+       #about,#por,#contact{
+           text-align: center;
+           margin-top: 50px;
+       }
+       #por>h2,#about>h2,#contact>h2{
+         font-size: 50px;
+         color: #c490bf;
+         margin-bottom: 20px;
+       }
+       #about p,#contact p{
+           color: #666666;
+           font-size: 25px;
+           font-family: Roboto;
+       }
+       #text{
+           margin-top: 30px;
+           text-align: center;
+           color: #666666;
+           font-size: 15px;
+           line-height: 30px;
+       }
+       #tt>p{
+           font-family: roboto;
+           font-size: 20px;
+           line-height: 40px;
+       }
+       /* #tt>p:nth-of-type(2){
+           border-bottom: 1px solid;
+           margin:0px 800px 0px 800px;
+       } */
+      
+       #about p{
+         color: #666666;
+         font-size: 25px;
+       }
+       #circle{
+           padding-top: 25px;
+            width: 50%;
+            margin: 20px;
+           
+       }
+       
+       section{
+       display: inline-block;
+       }
+     
+        #btn{
+            position: absolute;
+            top:0px;
+            right: 0px;
+            width: 50px;
+            height: 50px;
+        }
+        #pp p{
+            font-size: 15px;
+        }
+        footer{
+            margin-top: 50px;
+            width: 100%;
+            background-color: #666666;
+            height: 100px;
+            
+        }
+        footer p{
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            font-family: roboto;
+            
+        }
+        /* #footer{
+            margin-top: 50px;
+        } */
+        #con{
+            width: 60%;
+            margin-top: 50px;
+            display: flex;
+            flex-flow:row wrap;
+        }
+        section{
+            cursor: pointer;
+            position: relative;
+            margin: 0px;
+            width: 330px;
+            height: 270px;
+
+        }
+        section img{
+            width: 330px;
+            height: 270px;
+            margin-left: 70px;
+        }
+        section p{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 40%;
+            color: white;
+           position: absolute;
+           top:0px;
+           left: 70px;
+           display: none;
+          
+        }
+        section:hover p{
+            display: block;
+        }
+        @media screen and (min-width:768px){
+            #banner {
+              height: 70vh;
+            } 
+            header nav{
+                float: right;
+                margin-top: 100px;
+                margin-right: 80px;
+                display: block;
+              
+            }
+            header nav li{
+                background-color: white;
+                border: none;
+                display:inline-block;
+            }
+            #btn{
+                display: none;
+            }
+            header nav>ul>li>a{
+            color:#666666;
+            }
+            #banner h1{
+                left: 30%;
+               
+            }
+            #banner h3{
+                left: 34%;
+               
+            }
+        }
+
+        @media screen and (min-width:1024px){
+            
+        #banner{
+            height: 90vh;
+        }
+            header nav>ul>li>a{
+            color:#666666;      
+        }
+        header nav{
+                display: block;      
+            }
+            #banner h1{
+                left: 32%;
+                font-size: 120px;
+               
+            }
+            #banner h3{
+                left: 40%;
+                font-size: 40px;
+                top:52%;
+               
+            }
+        
+    }
+    @media screen and (min-width:320px){
+        header>img{
+            position: absolute;
+            top:0px;
+            left:0px;     
+        }
+         
+}
