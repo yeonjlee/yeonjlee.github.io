@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wink.css" type="text/css">
+</head>
+<body>
+    <header>
+       <div id="wheader">
+           <div id="three">
+                <a href="#"><img src="images/images/three.png" alt="삼선" style="width: 50px;"></a>
+           </div>
+             
+            <div id="top">
+                <a  href="winkmain.html">
+                    <img src="images/images/logotext.jpg" alt="로고이미지"  >
+                </a>            
+            </div>
+            <div id="topmenu">
+                <a href="#">로그인</a>
+                <p>|</p>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="clear"></div>
+            
+            <div id="sns">
+                <a href="https://www.facebook.com"><img src="images/images/face.jpg" alt="페이스북" style="width: 18px;"></a>
+                <a href="https://www.kakaocorp.com"><img src="images/images/catok.jpg" alt="카톡" style="width: 20px;"></a>
+                <a href="https://twitter.com"><img src="images/images/twiter.jpg" alt="트위터" style="width: 20px;"></a>
+            </div>
+       </div>
+
+       
+        <div id="w_main">
+            <div id="mainmenu">
+                <ul>
+                    <li><a href="#">윙크소개</a></li>
+                    <li><a href="#">우리아이 현황</a></li>
+                    <li><a href="#">우리아이 선생님</a></li>
+                    <li><a href="#">육아.교육마당</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="mainbanner">
+        <img src="images/images/banner.jpg" alt="메인배너">
+         <div id="rectangle">
+             <a href="#"><img src="images/images/wink11.png" alt="윙크소개"></a>
+             <a href="#"><img src="images/images/wink22.png" alt="윙크후기"></a>
+             <a href="#"><img src="images/images/wink33.png" alt="무료학습신청"></a>
+         </div>
+    </div>
+    
+       <div id="section">
+            <div id="pink">
+                    <img src="images/images/pink.png" alt="핑크요정" >
+            </div>
+            <div id="article">
+                    <div>
+                        <img src="images/images/article1.jpg" alt="">
+                        <a href="#"><p>설치 가이드<br> 자세히 보기</p></a>
+                    </div>
+                    <div>
+                        <img src="images/images/article2.jpg" alt="">
+                        <a href="#"><p>앱 가이드<br> 자세히 보기</p></a>
+                    </div>
+                    <div>
+                        <img src="images/images/article3.jpg" alt="">
+                        <a href="#"><p>모집 요강<br> 자세히 보기</p></a>
+                    </div>
+                    <div>
+                        <img src="images/images/article4.jpg" alt="">
+                        <a href="#"><p>탄생배경<br> 자세히 보기</p></a>
+                    </div>
+            </div>
+    </div>
+    <div id="subbanner">
+            <div id="color">
+                <img src="images/images/color.jpg" alt="색칠공부">
+                <img src="images/images/blue.png" alt="블루요정">
+            </div>
+
+            <div id="video">
+                <a href="#"> <img src="images/images/video.jpg" alt="동영상"  ></a>
+                <!-- <iframe  src="https://www.youtube.com/embed/DQbMkRtdY2I"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe> -->
+                <video src="https://s.wink.co.kr/mobile/main_autoplay.mp4" autoplay></video>
+            </div>
+
+            <div id="green">
+                <div>
+                    <a href="#">
+                        <img src="images/images/free.png" alt="프리">
+                        <p>무료학습 혜택 받기</p>
+                    </a>
+                </div>
+                <div> 
+                    <a href="#">
+                        <img src="images/images/card.png" alt="카드">
+                        <p>윙크 유료 학습 신청</p>
+                    </a>
+                </div>
+
+                <div> 
+                    <a href="#">
+                        <img src="images/images/circle.png" alt="말풍선">
+                        <p>1:1 실시간 채팅 상담</p>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <footer>
+           <div id="foot">
+                <div id="logotext">
+                    <img src="images/images/f_logo.jpg" alt="하단로고" >
+                    <p>윙크 학부모님 공감센터 1522-1244 <br>월~금요일  10:00~20:00 </p>
+                </div>
+                <div class="footer_list">
+                        <a href="#">회사소개</a>&nbsp;|&nbsp;<a href="#">이용약관</a>&nbsp;|&nbsp;<a href="#">개인정보취급방침</a>&nbsp;|&nbsp;<a href="#">고객센터</a>
+                </div>
+                <div id="copyright">
+                   <p>
+                        (주)단비교육 대표이사: 권영금    개인정보취급책임자: 김철영 <br>
+                        주소: 서울 강남구 대치동 967-5 정우빌딩    이메일주소: wink@danbiedu. co.kr <br>
+                        tkdjqwk emdfhrqjsgh: 629-87-00476    통신판매업 신고번호:  제 2017- 서울강남- 03262호 <br>
+                        copyright@ 2017danbi edu all right reserved. <br>
+                   </p>
+                </div>
+           </div>
+        </footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+         $(document).ready(function(){
+             var easymemu=0;
+             $('#three').click(function(){
+                 if(easymemu){
+                     easymemu=0;
+                    $('#w_main').css('display','none');
+                 }
+                 else{
+                    easymemu=1;
+                    $('#w_main').css('display','block');
+                 }
+             });
+             $('#video>a>img').click(function(){         
+                $(this).css('display','none');
+                $('#video>video').css('display','block');                
+                // $('#video>video').addClass('screen_fix');
+             });            
+         });
+    </script>
+</body>
+</html>
