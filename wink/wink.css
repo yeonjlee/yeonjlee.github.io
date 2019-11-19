@@ -174,9 +174,10 @@ padding-left:2%;
     margin-bottom: 10%
    
 }
-#video>a>img{
+#video img{
    margin-left: 8%;
    width: 84%;
+   cursor: pointer;
 }
 #video>video{
     width: 84%;
