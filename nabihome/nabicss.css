@@ -19,6 +19,12 @@ body{
      background-image: url("image/img1.jpg");
    
 }
+.gnb{
+    /* float: right; */
+    position: fixed;
+    margin-left: 1200px;
+    z-index: 1000;
+}
 .gnb li{
     list-style-type: none;
     background-color: #fdc689;
@@ -57,12 +63,7 @@ header>h1>a{
    top: 50px;
    left: 51px;
 }
-.gnb{
-      /* float: right; */
-      position: fixed;
-      margin-left: 1200px;
-      z-index: 1000;
-}
+
 #title{
     position: absolute;
     top:500px;
