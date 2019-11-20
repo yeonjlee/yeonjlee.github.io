@@ -22,7 +22,7 @@ body{
 .gnb{
     /* float: right; */
     position: fixed;
-    margin-left: 1200px;
+    margin-left: 62%;
     z-index: 1000;
 }
 .gnb li{
