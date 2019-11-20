@@ -28,6 +28,10 @@ body{
     text-align: center;
     line-height: 43px;
 }
+.gnb li:hover{
+    background-color: #736357;
+    color: #fff;
+}
 .gnb a{ 
    color: #666666;
    font-weight: 600;
@@ -54,7 +58,10 @@ header>h1>a{
    left: 51px;
 }
 .gnb{
-      float: right;
+      /* float: right; */
+      position: fixed;
+      margin-left: 1200px;
+      z-index: 1000;
 }
 #title{
     position: absolute;
