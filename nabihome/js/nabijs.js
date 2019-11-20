@@ -49,7 +49,7 @@ $(document).ready(function(){
 	//페이지 선택
     $('#all').on('click',function(){
 		$('#Portfolio>div').css('display','inline-block');
-		$('#work').css({'height':'2200px'});
+		$('#work').css({'height':'2070px'});
 		$('#creative').css({'top':'1075px'});           
 		$('#creative').css({'left':'1180px'});   
 		$('#tour').css({'padding-left':'25px'});           
@@ -61,21 +61,21 @@ $(document).ready(function(){
 		$('#goda,#tour,#menu, #marry, #name, #banner,#logo,#ham, #cos').css('display','none');
 		$('#creative').css({'top':'750px'});           
 		$('#creative').css({'left':'800px'});           
-		$('#work').css({'height':'1100px'});           
+		$('#work').css({'height':'1010px'});           
 	});
 	$('#webd').on('click',function(){
 			$('#Portfolio>div').css('display','inline-block');
 		$('#tour,#menu, #marry, #name, #banner,#logo,#ham, #cos').css('display','none');
 		$('#creative').css({'top':'750px'});           
 		$('#creative').css({'left':'1200px'});           
-		$('#work').css({'height':'1100px'});           
+		$('#work').css({'height':'1010px'});           
 	});
 	$('#ed').on('click',function(){
 			$('#Portfolio>div').css('display','inline-block');
 		$('#samwoo,#wink, #blog, #lovat, #goda,#empty').css('display','none');
 		$('#creative').css({'top':'1100px'});           
 		$('#creative').css({'left':'1200px'});           
-		$('#work').css({'height':'1450px'});           
+		$('#work').css({'height':'1393px'});           
 		$('#tour').css({'padding-left':'0px'});           
 		$('#menu').css({'padding-left':'25px'});           
 	});

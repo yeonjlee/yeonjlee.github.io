@@ -28,7 +28,7 @@ body{
     text-align: center;
     line-height: 43px;
 }
-.gnb li>a{ 
+.gnb a{ 
    color: #666666;
    font-weight: 600;
    font-size: 16px;
@@ -82,7 +82,7 @@ position: relative;
 }
 #work{
 width:1200px;
-height: 2200px;
+height: 2070px;
 padding-top: 60px;
 }
 #work>h3{
@@ -249,7 +249,7 @@ background-color: #fff;
 }
 #about{
 width:1200px;
-height: 2100px;
+height: 1920px;
 padding-top: 60px;
 }
 #about>h3{
@@ -461,7 +461,7 @@ background-color: #c7b299;
 }
 #contact{
 width:1200px;
-height: 740px;
+height: 650px;
 padding-top: 60px;
 position: relative;
 }
