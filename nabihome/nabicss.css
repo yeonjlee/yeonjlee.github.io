@@ -285,7 +285,7 @@ position: relative;
 }
 #mactext>div>p{
 font-size: 16px;
-font-family: Adobe Gothic Std;
+/* font-family: Adobe Gothic Std; */
 color: #666666;
 
 }
@@ -514,7 +514,7 @@ color: #666666;
 text-align: center;
 color: #666666;
 font-size: 18px;
-font-weight: 600;
+font-weight: 500;
 position: absolute;
 top:500px;
 left: 300px;
