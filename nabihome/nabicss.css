@@ -285,7 +285,8 @@ position: relative;
 }
 #mactext>div>p{
 font-size: 16px;
-/* font-family: Adobe Gothic Std; */
+font-family: Noto Sans KR Regular;
+line-height: 30px;
 color: #666666;
 
 }
@@ -460,7 +461,9 @@ margin-top: 70px;
       text-align: center;
       color: #666666;
       font-size: 16px;
-      font-family: Adobe Gothic Std;
+      font-family:Noto Sans KR Bold;
+      font-weight: 600;
+      line-height: 30px;
   }
 /* 컨텍트미 페이지*/
 
@@ -513,8 +516,9 @@ color: #666666;
 #me_text{
 text-align: center;
 color: #666666;
+font-family: Noto Sans KR Regular;
+line-height: 30px;
 font-size: 18px;
-font-weight: 500;
 position: absolute;
 top:500px;
 left: 300px;
